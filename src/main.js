@@ -1,12 +1,6 @@
-import Vue from 'vue'
-import VueCompositionAPI, { createApp, h } from '@vue/composition-api'
-import '@/assets/main.css'
-import App from '@/App.vue'
+import './assets/main.css'
 
-Vue.use(VueCompositionAPI)
+import { createApp } from 'vue'
+import App from './App.vue'
 
-const app = createApp({
-  render: () => h(App)
-})
-
-app.mount('#app')
+createApp(App).mount('#app')
